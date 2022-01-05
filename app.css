@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+
+* , ::after , ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #674BAF;
+    background-image: url(img/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.logo img {
+    margin: 50px;
+}
+.content {
+    position: relative;
+    color: #fff;
+    margin-left: 30px;
+}
+h1 {
+    font-size: 2.8em;
+    margin-top: 30px;
+    text-transform: uppercase;
+    width: 80%;
+}
+p{
+    padding-top: 30px;
+    font-size: 1.1em;
+    width: 90%;
+}
+button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    border-radius: 35px;
+    width: 25%;
+    border: none;
+    font-size: 1.1em;
+    color: hsl(257, 40%, 49%);
+    cursor: pointer;
+    transition: 0.7s ease-in-out;
+}
+button:hover {
+    background-color: #b161c5;
+    color: white;
+}
+.social-icons{
+    justify-content: right;
+    margin-right: 35px;
+    color: white;
+    font-size: 1.5em;
+cursor: pointer;
+float: right;
+}
+
+.social-icons i {
+    padding-right: 20px;
+    transition: 0.5s ease-in-out;
+}
+.social-icons i:hover{
+    color: #b161c5 ;
+}
+
+@media (max-width : 640px) {
+    body{
+        width: 100%;
+        background-image: url(img/bg-mobile.svg);
+    }
+    .container {
+        margin: 0 auto;
+        display: inline-block;
+    }
+    .logo img {
+        margin: 15px;
+        width: 40%;
+    }
+    .content {
+        margin-left: 0px;
+    }
+    
+    .main .img img {
+        width: 100%;
+    }
+    .main {
+        margin: 0 auto;
+    text-align: center;
+    }
+    h1 {
+        font-size: 1.6em;
+        margin-top: 30px;
+        text-transform: uppercase;
+        width: 100%;
+    }
+    p{
+        padding-top: 20px;
+        font-size: 1.1em;
+        width: 100%;
+    }
+    button {
+        width: 50%;
+    }
+    .social-icons{
+        width: 100%;
+display: inline-flex;
+flex-direction: row;
+margin-top: 20px;
+margin-right: 0px;
+justify-content: center;
+    }
+
+}
+@media (min-width : 768px) and (max-width : 1023px) {
+    body {
+        background-image: url(img/bg-mobile.svg);
+    }
+    .container {
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .main .img img {
+        width: 100%;
+    }
+    .main {
+        margin: 0 auto;
+    text-align: center;
+    }
+    h1 {
+        margin-top: 20px;
+        width: 100%;
+    }
+    p{
+        padding-top: 30px;
+        font-size: 1.5em;
+        width: 100%;
+    }
+    button {
+        width: 40%;
+        font-size: 1.5em;
+    }
+    .social-icons{
+        display: inline-block;
+        justify-content: center;
+        margin-right: 0;
+    }
+}
